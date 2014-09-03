@@ -7,7 +7,6 @@ Automatically attempts to push your repo - Great for flakey wifi connections
 usage
 =====
 
-
 ```
 #repush [remote]
 #e.g.
