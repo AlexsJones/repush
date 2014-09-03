@@ -11,7 +11,10 @@ function echo_green()
     echo $1
     tput sgr0
 }
-
+function echo_same_line()
+{
+  echo -ne "Pending \033[0k\r"
+}
 echo_green "Attempting repush.."
 while true
 do
@@ -22,6 +25,6 @@ echo_green "Pushing..."
 `git push origin $REMOTE`
 exit 0
 else
-echo "Pending..."
+echo_same_line
 fi
 done

@@ -20,6 +20,6 @@ Installation
 Supported platforms `Unix`
 
 ```
-./install.sh
+./install
 #=> Enter SU password to install into /usr/local/bin
 ```
