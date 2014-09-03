@@ -13,12 +13,18 @@ usage
 repush upstream
 ```
 
-Installation
+installation
 ======
 
-Supported platforms `Unix`
+Supported platforms `Unix/OSX`
 
 ```
 ./install
 #=> Enter SU password to install into /usr/local/bin
 ```
+
+deps
+====
+
+`wget`
+`git`
