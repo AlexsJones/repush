@@ -1,0 +1,23 @@
+#!/bin/bash
+REMOTE=$1
+echo "Using remote $REMOTE"
+function echo_green()
+{
+  tput setaf 2
+    echo $1
+    tput sgr0
+}
+
+echo_green "Attempting repush.."
+while true
+do
+wget -q --tries=10 --timeout=20 --spider http://google.com
+if [[ $? -eq 0 ]]; then
+echo_green "Online..."
+echo_green "Pushing..."
+`git push origin $REMOTE`
+exit 0
+else
+echo "Pending..."
+fi
+done
