@@ -1,5 +1,9 @@
 #!/bin/bash
 REMOTE=$1
+if [[ $REMOTE == "" ]]; then
+  echo "Please provide a remote e.g repush master"
+  exit 1
+fi
 echo "Using remote $REMOTE"
 function echo_green()
 {
