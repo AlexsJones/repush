@@ -3,6 +3,7 @@ repush
 
 Automatically attempts to push your repo - Great for flakey wifi connections
 
+[Example in action](http://showterm.io/3b1dc675b95402234a7f6#fast)
 
 usage
 =====
